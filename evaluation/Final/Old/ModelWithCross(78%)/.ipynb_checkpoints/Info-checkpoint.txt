@@ -1,1 +1,0 @@
-Total valid Samples: 4737, Number of Samples classified as None: 3558.
