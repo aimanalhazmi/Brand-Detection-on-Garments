@@ -1,0 +1,64 @@
+[INFO]: Number of training images: 16330
+[INFO]: Number of validation images: 4083
+[INFO]: NUmber of Classes: 286
+
+Computation device: cuda:0
+Model: Resnet50
+Loss Function: CrossEntropyLoss
+Optimizer: Adam
+Learning rate: 0.0001
+Batch Size: 24
+Epochs to train for: 100
+
+===============================================================================================
+Layer (type:depth-idx)                        Output Shape              Param #
+===============================================================================================
+Resnet50                                      [32, 286]                 --
+├─ResNet: 1-1                                 [32, 2048]                --
+│    └─Conv2d: 2-1                            [32, 64, 112, 112]        (9,408)
+│    └─BatchNorm2d: 2-2                       [32, 64, 112, 112]        (128)
+│    └─ReLU: 2-3                              [32, 64, 112, 112]        --
+│    └─MaxPool2d: 2-4                         [32, 64, 56, 56]          --
+│    └─Sequential: 2-5                        [32, 256, 56, 56]         --
+│    │    └─Bottleneck: 3-1                   [32, 256, 56, 56]         (75,008)
+│    │    └─Bottleneck: 3-2                   [32, 256, 56, 56]         (70,400)
+│    │    └─Bottleneck: 3-3                   [32, 256, 56, 56]         (70,400)
+│    └─Sequential: 2-6                        [32, 512, 28, 28]         --
+│    │    └─Bottleneck: 3-4                   [32, 512, 28, 28]         (379,392)
+│    │    └─Bottleneck: 3-5                   [32, 512, 28, 28]         (280,064)
+│    │    └─Bottleneck: 3-6                   [32, 512, 28, 28]         (280,064)
+│    │    └─Bottleneck: 3-7                   [32, 512, 28, 28]         (280,064)
+│    └─Sequential: 2-7                        [32, 1024, 14, 14]        --
+│    │    └─Bottleneck: 3-8                   [32, 1024, 14, 14]        1,512,448
+│    │    └─Bottleneck: 3-9                   [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-10                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-11                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-12                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-13                  [32, 1024, 14, 14]        1,117,184
+│    └─Sequential: 2-8                        [32, 2048, 7, 7]          --
+│    │    └─Bottleneck: 3-14                  [32, 2048, 7, 7]          6,039,552
+│    │    └─Bottleneck: 3-15                  [32, 2048, 7, 7]          4,462,592
+│    │    └─Bottleneck: 3-16                  [32, 2048, 7, 7]          4,462,592
+│    └─AdaptiveAvgPool2d: 2-9                 [32, 2048, 1, 1]          --
+│    └─Identity: 2-10                         [32, 2048]                --
+├─Sequential: 1-2                             [32, 286]                 --
+│    └─Linear: 2-11                           [32, 1024]                2,098,176
+│    └─BatchNorm1d: 2-12                      [32, 1024]                2,048
+│    └─Linear: 2-13                           [32, 512]                 524,800
+│    └─BatchNorm1d: 2-14                      [32, 512]                 1,024
+│    └─Linear: 2-15                           [32, 286]                 146,718
+===============================================================================================
+Total params: 26,280,798
+Trainable params: 24,835,870
+Non-trainable params: 1,444,928
+Total mult-adds (G): 130.88
+===============================================================================================
+Input size (MB): 19.27
+Forward/backward pass size (MB): 5691.22
+Params size (MB): 105.12
+Estimated Total Size (MB): 5815.61
+===============================================================================================
+[INFO]: Number of training images: 16330
+[INFO]: Number of validation images: 4083
+[INFO]: NUmber of Classes: 286
+
