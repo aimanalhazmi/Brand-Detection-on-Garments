@@ -1,0 +1,36 @@
+Dolce & Gabbana: Class:79 ,Total images: 3, fed into model: 0, loss: 3
+Dixie: Class:77 ,Total images: 1, fed into model: 0, loss: 1
+Springfield: Class:259 ,Total images: 3, fed into model: 0, loss: 3
+Morgan: Class:197 ,Total images: 4, fed into model: 0, loss: 4
+La Perla: Class:156 ,Total images: 1, fed into model: 0, loss: 1
+And1: Class:5 ,Total images: 2, fed into model: 0, loss: 2
+Imperial: Class:139 ,Total images: 1, fed into model: 0, loss: 1
+Always: Class:12 ,Total images: 8, fed into model: 0, loss: 8
+Detroit: Class:71 ,Total images: 1, fed into model: 0, loss: 1
+Buffalo: Class:43 ,Total images: 3, fed into model: 0, loss: 3
+Los Angeles: Class:170 ,Total images: 1, fed into model: 0, loss: 1
+
+
+Total: 28 images
+
+Morgan: dino was false, model correct. 
+Imperial: no logo, label does not match the detcetd object, which is obviously not lot 
+Always
+
+28 brands not fed to the model, model classified as none.
+
+
+
+Brand anmes:
+
+Dolce & Gabbana: model correct both
+Dixie: model coorect both
+Springfield: one image was none, 2 are classified as none because the logo of this brand is a tree and the model is  not trained on images like this..
+Morgan: model coorect  both
+La Perla: model coorect both
+And1: first model correct, classification false .........As example take it
+Imperial: model coorect both
+Always: model coorect both
+Detroit: coorect, no logo, 
+Buffalo: two are none, one first model coorect, classification idk (not trained)
+Los Angeles: both coorect

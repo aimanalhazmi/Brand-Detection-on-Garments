@@ -1,0 +1,70 @@
+Next: Class:203 ,Total images: 55, fed into model: 23, loss: 32
+Russell: Class:247 ,Total images: 5, fed into model: 3, loss: 2
+Batman: Class:28 ,Total images: 7, fed into model: 7, loss: 0
+Vans: Class:284 ,Total images: 105, fed into model: 93, loss: 12
+Always: Class:12 ,Total images: 8, fed into model: 0, loss: 8
+Sloggi: Class:255 ,Total images: 8, fed into model: 3, loss: 5
+Speedo: Class:258 ,Total images: 7, fed into model: 6, loss: 1
+Chicago: Class:57 ,Total images: 1, fed into model: 1, loss: 0
+Bounce: Class:38 ,Total images: 1, fed into model: 1, loss: 0
+Victoria's Secret: Class:286 ,Total images: 40, fed into model: 10, loss: 30
+Nike: Class:208 ,Total images: 1103, fed into model: 949, loss: 154
+Hummel: Class:132 ,Total images: 93, fed into model: 71, loss: 22
+La Perla: Class:156 ,Total images: 1, fed into model: 0, loss: 1
+Puma: Class:235 ,Total images: 353, fed into model: 284, loss: 69
+Star Wars: Class:261 ,Total images: 30, fed into model: 22, loss: 8
+CCM: Class:46 ,Total images: 10, fed into model: 6, loss: 4
+Trespass: Class:278 ,Total images: 3, fed into model: 1, loss: 2
+Salewa: Class:248 ,Total images: 4, fed into model: 3, loss: 1
+Diesel: Class:74 ,Total images: 79, fed into model: 31, loss: 48
+Los Angeles: Class:170 ,Total images: 1, fed into model: 0, loss: 1
+Disney Pixar: Class:76 ,Total images: 8, fed into model: 2, loss: 6
+Morgan: Class:197 ,Total images: 4, fed into model: 0, loss: 4
+G-Star: Class:105 ,Total images: 8, fed into model: 5, loss: 3
+MP: Class:179 ,Total images: 6, fed into model: 4, loss: 2
+Everlast: Class:98 ,Total images: 4, fed into model: 4, loss: 0
+Springfield: Class:259 ,Total images: 3, fed into model: 0, loss: 3
+Imperial: Class:139 ,Total images: 1, fed into model: 0, loss: 1
+Escada: Class:95 ,Total images: 5, fed into model: 1, loss: 4
+Geox: Class:111 ,Total images: 2, fed into model: 2, loss: 0
+Triumph: Class:279 ,Total images: 25, fed into model: 8, loss: 17
+Fox: Class:101 ,Total images: 4, fed into model: 2, loss: 2
+H&M: Class:120 ,Total images: 2435, fed into model: 818, loss: 1617
+Tommy Hilfiger: Class:275 ,Total images: 366, fed into model: 230, loss: 136
+Zoo York: Class:294 ,Total images: 3, fed into model: 1, loss: 2
+Ellesse: Class:90 ,Total images: 87, fed into model: 81, loss: 6
+Desigual: Class:70 ,Total images: 190, fed into model: 45, loss: 145
+Zoggs: Class:293 ,Total images: 3, fed into model: 2, loss: 1
+C&A: Class:45 ,Total images: 39, fed into model: 13, loss: 26
+Saucony: Class:250 ,Total images: 10, fed into model: 9, loss: 1
+Nickelodeon: Class:207 ,Total images: 11, fed into model: 6, loss: 5
+Reef: Class:242 ,Total images: 1, fed into model: 1, loss: 0
+Zara: Class:292 ,Total images: 751, fed into model: 266, loss: 485
+Cat: Class:53 ,Total images: 1, fed into model: 1, loss: 0
+Ed Hardy: Class:86 ,Total images: 6, fed into model: 2, loss: 4
+Buffalo: Class:43 ,Total images: 3, fed into model: 0, loss: 3
+Detroit: Class:71 ,Total images: 1, fed into model: 0, loss: 1
+Lacoste: Class:295 ,Total images: 57, fed into model: 10, loss: 47
+And1: Class:5 ,Total images: 2, fed into model: 0, loss: 2
+Columbia: Class:61 ,Total images: 18, fed into model: 12, loss: 6
+Calvin Klein: Class:49 ,Total images: 149, fed into model: 113, loss: 36
+Mizuno: Class:193 ,Total images: 3, fed into model: 3, loss: 0
+Hanes: Class:124 ,Total images: 9, fed into model: 6, loss: 3
+Gap: Class:109 ,Total images: 62, fed into model: 55, loss: 7
+Reebok: Class:241 ,Total images: 99, fed into model: 68, loss: 31
+Givova: Class:114 ,Total images: 1, fed into model: 1, loss: 0
+Svea: Class:265 ,Total images: 30, fed into model: 21, loss: 9
+Boss: Class:37 ,Total images: 10, fed into model: 8, loss: 2
+Hurley: Class:134 ,Total images: 2, fed into model: 1, loss: 1
+Pineapple: Class:232 ,Total images: 1, fed into model: 1, loss: 0
+Dolce & Gabbana: Class:79 ,Total images: 3, fed into model: 0, loss: 3
+Nautica: Class:205 ,Total images: 1, fed into model: 1, loss: 0
+Element: Class:88 ,Total images: 7, fed into model: 4, loss: 3
+Fusion: Class:104 ,Total images: 5, fed into model: 3, loss: 2
+Adidas: Class:8 ,Total images: 1909, fed into model: 1472, loss: 437
+Arena: Class:22 ,Total images: 7, fed into model: 5, loss: 2
+Emilio: Class:92 ,Total images: 5, fed into model: 4, loss: 1
+Dixie: Class:77 ,Total images: 1, fed into model: 0, loss: 1
+Roxy: Class:246 ,Total images: 15, fed into model: 5, loss: 10
+None: Class:211 ,Total images: 877, fed into model: 0, loss: 877
+Burberry: Class:44 ,Total images: 8, fed into model: 2, loss: 6
