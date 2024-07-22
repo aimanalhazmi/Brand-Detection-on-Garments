@@ -1,3 +1,0 @@
-[info]: Total valid Samples: 3728, Number of Samples classified as None: 1381.
-
-Zara, H&M , None raus

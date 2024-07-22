@@ -1,3 +1,0 @@
-[info]: Total valid Samples: 4605, Number of Samples classified as None: 1381.
-All images: 5986
-Zara, H%M raus. None ist drin.
