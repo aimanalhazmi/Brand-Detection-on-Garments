@@ -1,0 +1,94 @@
+[INFO]: Dataset loaded successfully.
+[INFO]: Transforms are Done ..
+[INFO]: Number of Training Images: 16971
+[INFO]: Number of Validation Images: 4243
+[INFO]: Number of Classes: 297
+
+[INFO]: Seed set to: 42 for Python's built-in random module, NumPy and PyTorch.
+[INFO]: PyTorch CUDA seeds set to: 42
+[INFO]: PyTorch cuDNN deterministic setting set to True for reproducibility.
+[INFO]: PyTorch cuDNN benchmark setting set to False for reproducibility.
+
+Model: EfficientNetB7
+[INFO]: Number of in_features: 2560
+[INFO]: Freezing hidden layers...
+[INFO]: Setting Loss Function: CrossEntropyLoss..
+[INFO]: Setting Optimizer: Adam..
+[INFO]: No Scheduler used..
+
+Configuration Settings: {
+    "Data_Path": "Datasets/ClothesModified/",
+    "Save_To": "models/2024-07-02_8:38/EfficientNetB7",
+    "Cross_Validation": false,
+    "k_folds": 5,
+    "Split_Size": 0.8,
+    "Models": [
+        "Resnet50",
+        "EfficientNetB7",
+        "Vgg16",
+        "Resnet101"
+    ],
+    "Fine_Tune": false,
+    "Pretrained": true,
+    "Num_Epochs": 100,
+    "Batch_size": 32,
+    "Optimizer": {
+        "Name": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0,
+        "momentum": 0.9
+    },
+    "Loss_Function": "CrossEntropyLoss",
+    "label_smoothing": 0,
+    "Scheduler": null,
+    "EarlyStopping": {
+        "Patience": 50,
+        "min_delta": 0,
+        "verbose": true
+    }
+}
+==============================================================================================================
+Layer (type:depth-idx)                                       Output Shape              Param #
+==============================================================================================================
+EfficientNetB7                                               [32, 297]                 --
+├─EfficientNet: 1-1                                          [32, 2560]                --
+│    └─Sequential: 2-1                                       [32, 2560, 7, 7]          --
+│    │    └─Conv2dNormActivation: 3-1                        [32, 64, 112, 112]        (1,856)
+│    │    └─Sequential: 3-2                                  [32, 32, 112, 112]        (10,920)
+│    │    └─Sequential: 3-3                                  [32, 48, 56, 56]          (253,424)
+│    │    └─Sequential: 3-4                                  [32, 80, 28, 28]          (716,068)
+│    │    └─Sequential: 3-5                                  [32, 160, 14, 14]         (3,721,660)
+│    │    └─Sequential: 3-6                                  [32, 224, 14, 14]         (7,615,904)
+│    │    └─Sequential: 3-7                                  [32, 384, 7, 7]           (28,390,712)
+│    │    └─Sequential: 3-8                                  [32, 640, 7, 7]           (21,432,896)
+│    │    └─Conv2dNormActivation: 3-9                        [32, 2560, 7, 7]          (1,643,520)
+│    └─AdaptiveAvgPool2d: 2-2                                [32, 2560, 1, 1]          --
+│    └─Identity: 2-3                                         [32, 2560]                --
+├─Sequential: 1-2                                            [32, 297]                 --
+│    └─Linear: 2-4                                           [32, 297]                 760,617
+==============================================================================================================
+Total params: 64,547,577
+Trainable params: 760,617
+Non-trainable params: 63,786,960
+Total mult-adds (G): 165.39
+==============================================================================================================
+Input size (MB): 19.27
+Forward/backward pass size (MB): 20508.29
+Params size (MB): 258.19
+Estimated Total Size (MB): 20785.74
+==============================================================================================================
+
+Classifier_layer: Sequential(
+  (0): Linear(in_features=2560, out_features=297, bias=True)
+)
+
+TRAINING COMPLETE IN 55m 6s
+Best Validation Acc: 31.887815%
+
+--------------------------------------------------------------------------------
+
+Evaluation...
+
+Validation...
+[INFO] Validation Loss: 4.5439 | Acc: 31.4165% | Weighted F1: 31.5471
+Accuracy on Validation set using accuracy_score from sklearn: 31.416450624558095%

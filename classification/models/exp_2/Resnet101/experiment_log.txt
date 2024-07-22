@@ -1,0 +1,134 @@
+[INFO]: Dataset loaded successfully.
+[INFO]: Transforms are Done ..
+[INFO]: Number of Training Images: 16971
+[INFO]: Number of Validation Images: 4243
+[INFO]: Number of Classes: 297
+
+[INFO]: Transforms are Done ..
+[INFO]: Seed set to: 42 for Python's built-in random module, NumPy and PyTorch.
+[INFO]: PyTorch CUDA seeds set to: 42
+[INFO]: PyTorch cuDNN deterministic setting set to True for reproducibility.
+[INFO]: PyTorch cuDNN benchmark setting set to False for reproducibility.
+
+Model: Resnet101
+[INFO]: Number of infeatures:2048
+[INFO]: Freezing hidden layers...
+[INFO]: Setting Loss Function: CrossEntropyLoss..
+[INFO]: Setting Optimizer: Adam..
+[INFO]: Setting Scheduler: ReduceLROnPlateau..
+
+Configuration Settings: {
+    "Data_Path": "Datasets/ClothesModified/",
+    "Save_To": "models/2024-07-02_14:28/Resnet101",
+    "Cross_Validation": false,
+    "k_folds": 5,
+    "Split_Size": 0.8,
+    "Models": [
+        "Resnet50",
+        "EfficientNetB7",
+        "Vgg16",
+        "Resnet101"
+    ],
+    "Fine_Tune": false,
+    "Pretrained": true,
+    "Num_Epochs": 100,
+    "Batch_size": 32,
+    "Optimizer": {
+        "Name": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0,
+        "momentum": 0.9
+    },
+    "Loss_Function": "CrossEntropyLoss",
+    "label_smoothing": 0,
+    "Scheduler": {
+        "Name": "ReduceLROnPlateau",
+        "step_size": 10,
+        "gamma": 0.1,
+        "Warmup_Epochs": 10,
+        "Stop_LR": 150,
+        "Base_LR": 0.001,
+        "Final_LR": 1e-05
+    },
+    "EarlyStopping": {
+        "Patience": 20,
+        "min_delta": 0,
+        "verbose": true
+    }
+}
+===============================================================================================
+Layer (type:depth-idx)                        Output Shape              Param #
+===============================================================================================
+Resnet101                                     [32, 297]                 --
+├─ResNet: 1-1                                 [32, 2048]                --
+│    └─Conv2d: 2-1                            [32, 64, 112, 112]        (9,408)
+│    └─BatchNorm2d: 2-2                       [32, 64, 112, 112]        (128)
+│    └─ReLU: 2-3                              [32, 64, 112, 112]        --
+│    └─MaxPool2d: 2-4                         [32, 64, 56, 56]          --
+│    └─Sequential: 2-5                        [32, 256, 56, 56]         --
+│    │    └─Bottleneck: 3-1                   [32, 256, 56, 56]         (75,008)
+│    │    └─Bottleneck: 3-2                   [32, 256, 56, 56]         (70,400)
+│    │    └─Bottleneck: 3-3                   [32, 256, 56, 56]         (70,400)
+│    └─Sequential: 2-6                        [32, 512, 28, 28]         --
+│    │    └─Bottleneck: 3-4                   [32, 512, 28, 28]         (379,392)
+│    │    └─Bottleneck: 3-5                   [32, 512, 28, 28]         (280,064)
+│    │    └─Bottleneck: 3-6                   [32, 512, 28, 28]         (280,064)
+│    │    └─Bottleneck: 3-7                   [32, 512, 28, 28]         (280,064)
+│    └─Sequential: 2-7                        [32, 1024, 14, 14]        --
+│    │    └─Bottleneck: 3-8                   [32, 1024, 14, 14]        1,512,448
+│    │    └─Bottleneck: 3-9                   [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-10                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-11                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-12                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-13                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-14                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-15                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-16                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-17                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-18                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-19                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-20                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-21                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-22                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-23                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-24                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-25                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-26                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-27                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-28                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-29                  [32, 1024, 14, 14]        1,117,184
+│    │    └─Bottleneck: 3-30                  [32, 1024, 14, 14]        1,117,184
+│    └─Sequential: 2-8                        [32, 2048, 7, 7]          --
+│    │    └─Bottleneck: 3-31                  [32, 2048, 7, 7]          6,039,552
+│    │    └─Bottleneck: 3-32                  [32, 2048, 7, 7]          4,462,592
+│    │    └─Bottleneck: 3-33                  [32, 2048, 7, 7]          4,462,592
+│    └─AdaptiveAvgPool2d: 2-9                 [32, 2048, 1, 1]          --
+│    └─Identity: 2-10                         [32, 2048]                --
+├─Sequential: 1-2                             [32, 297]                 --
+│    └─Linear: 2-11                           [32, 297]                 608,553
+===============================================================================================
+Total params: 43,108,713
+Trainable params: 41,663,785
+Non-trainable params: 1,444,928
+Total mult-adds (G): 249.60
+===============================================================================================
+Input size (MB): 19.27
+Forward/backward pass size (MB): 8310.83
+Params size (MB): 172.43
+Estimated Total Size (MB): 8502.53
+===============================================================================================
+
+Classifier_layer: Sequential(
+  (0): Linear(in_features=2048, out_features=297, bias=True)
+)
+
+TRAINING COMPLETE IN 37m 23s
+Best Validation Acc: 29.036059%
+
+--------------------------------------------------------------------------------
+
+Evaluation...
+
+Validation...
+[INFO] Validation Loss: 4.8268 | Acc: 28.0462% | Weighted F1: 28.8110
+Accuracy on Validation set using accuracy_score from sklearn: 28.046193730850817%
